@@ -158,13 +158,16 @@ llab.renderFull = function(data, ignored1, ignored2) {
                 learningGoal = false;
                 bigIdea = false;
                 var sepIdx = line.indexOf(":");
-                if (sepIdx != -1 && llab.isTag(line.slice(0, sepIdx))) {
-                    item = $(document.createElement("li")).append(line.slice(0, sepIdx));
-                } else if (sepIdx != -1) {
-                    item = $(document.createElement("li")).append(line.slice(0, sepIdx));
+//                if (raw || sepIdx != -1 && line.slice(0, sepIdx) == "raw-html") {
+//                    item = $(document.createElement("div")).append(line.slice(0, sepIdx));
+//		} else {
+		if (sepIdx != -1 && llab.isTag(line.slice(0, sepIdx))) {
+                    item = $(document.createElement("div")).append(line.slice(0, sepIdx));
+                } else if (sepIdx != -1 && line.slice(0, sepIdx) != "raw-html") {
+                    item = $(document.createElement("li")) // .append(line.slice(0, sepIdx));
 //                    item = $(document.createElement("li")); // .attr({'class': line.split(":")[0] + indent});
                 } else {
-                    item = $(document.createElement("li"));
+                    item = $(document.createElement("div"));
                 }
                 if (line.indexOf("[") != -1) {
                     var temp = $(document.createElement("a"));
