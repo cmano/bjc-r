@@ -12,7 +12,7 @@ llab.loaded = llab.loaded || {};
 
 /////////////////
 // TODO: ALL CORS SETTINGS SHOULD BE MOVED TO THE CONFIG FILE.
-llab.CORSproxy = "https://";
+llab.CORSproxy = "https://";  //CDM: had to change this to get snap to load file correctly
 
 llab.CORSCompliantServers = [];
 llab.CORSCompliantServers.push("bjc.berkeley.edu");
