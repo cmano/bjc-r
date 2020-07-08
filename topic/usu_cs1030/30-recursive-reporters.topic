@@ -1,0 +1,10 @@
+title: Recursive Functions
+
+{
+heading: Lab 30: Recursive Reporters
+    raw-html: <div class="todo">Mary to fold page 2 into page 1 (with solution hinted) --MF, 6/17/20<p>"a reporter only gets to report once, so when you do recursive commands, you use a helper function"</p><p>What? No.  A reporter only gets to report once, so when you write a recursive reporter you have to use a <em>combiner</em> function to connect the recursive call(s) with the non-recursive steps. -bh</p></div>
+	resource: Counting Trees [/bjc-r/cur/programming/8-recursive-reporters/1-recursive-reporters/1-counting-trees.html]
+	resource: Writing Recursive Reporters [/bjc-r/cur/programming/8-recursive-reporters/1-recursive-reporters/2-writing-recursive-reporters.html]
+
+}
+

@@ -1,0 +1,12 @@
+title: How the Internet Works
+
+{
+heading: Lab 17: Cybersecurity 
+	resource: Cryptography [/bjc-r/cur/programming/4-internet/2-cybersecurity/1-cryptography.html]
+	resource: Caesar Cipher Project [/bjc-r/cur/programming/4-internet/2-cybersecurity/2-caesar-cipher.html]
+	resource: Public Key Encryption [/bjc-r/cur/programming/4-internet/2-cybersecurity/3-asymmetric_cryptography.html]
+	resource: Who Cares About Encryption? [/bjc-r/cur/programming/4-internet/2-cybersecurity/4-who-cares-about-encryption.html]
+	quiz: Security Risks [/bjc-r/cur/programming/4-internet/2-cybersecurity/5-security-risks.html]
+	resource: What Can You Do? [/bjc-r/cur/programming/4-internet/2-cybersecurity/6-cybersecurity.html]
+	
+}

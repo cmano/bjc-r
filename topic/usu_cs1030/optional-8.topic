@@ -1,0 +1,15 @@
+title: Recursive Functions
+
+{
+heading: Optional Project: Pascal's Triangle
+    raw-html: <div class="todo">Mary to make this an optional project. --MF, 6/17/20</div>
+	resource: Pascal's Triangle [/bjc-r/cur/programming/8-recursive-reporters/5-pascals-triangle/1-pascals-triangle.html]
+	resource: Pascal's Triangle and Efficiency [/bjc-r/cur/programming/8-recursive-reporters/5-pascals-triangle/2-pascal-efficiency.html]
+
+heading: Optional Project: Sorting
+	resource: Sorting a List [/bjc-r/cur/programming/8-recursive-reporters/6-sorting/1-sorting-a-list.html]
+	resource: Selection Sort [/bjc-r/cur/programming/8-recursive-reporters/6-sorting/2-selection-sort.html]
+	resource: Partition Sort [/bjc-r/cur/programming/8-recursive-reporters/6-sorting/3-partition-sort.html]
+
+}
+

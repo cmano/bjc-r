@@ -1,0 +1,12 @@
+title: Unit 4: How the Internet Works
+
+{	
+heading: Lab 16: Computer Networks
+	raw-html: <img class="imageRight" src="/bjc-r/img/4-internet/hierarchical-1.jpg" alt="Address Hierarchy" title="Address Hierarchy" />
+	resource: What Is the Internet? [/bjc-r/cur/programming/4-internet/1-reliable-communication/1-what-is-internet.html]
+	quiz: Network Redundancy [/bjc-r/cur/programming/4-internet/1-reliable-communication/2-network-redundancy.html]
+    resource: Internet Abstractions and Open Protocols [/bjc-r/cur/programming/4-internet/1-reliable-communication/3-open-protocols.html]
+    resource: Who's In Charge of the Internet? [/bjc-r/cur/programming/4-internet/1-reliable-communication/4-who-is-in-charge.html]
+	raw-html: <div class="todo"><p>Rest of unit needs renumbering (and standards XLS). TG to be cleaned up after 8/30. --MF, 8/29/19</p></div>
+	
+}

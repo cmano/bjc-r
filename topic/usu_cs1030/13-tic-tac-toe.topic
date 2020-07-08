@@ -1,0 +1,11 @@
+title: Data Structures
+
+{
+	
+heading: Lab 13: Tic-Tac-Toe
+	raw-html: <div class="todo">Content: idenitfying if someone has won the game <br/>Goal: higher order functions (learning <code>map</code> for the first time; reviewing others)<ul><li>Selim is worried that this is too complex a context for the introduction to <code>map</code> (Al and Mary agree.)</li><li>Big unsettled debate: Do we motivate HOFs are capstones to make life easier or do we start with them and use the details later?</li></ul></div>
+	resource: Remembering the Moves and Possible Wins [/bjc-r/cur/programming/3-lists/3-tic-tac-toe/1-find-ties.html]
+	resource: Detecting A Win [/bjc-r/cur/programming/3-lists/3-tic-tac-toe/2-checking-for-a-win.html]
+	resource: Checking for Ties [/bjc-r/cur/programming/3-lists/3-tic-tac-toe/3-checking-for-ties.html]
+
+}
