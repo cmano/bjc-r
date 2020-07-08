@@ -57,75 +57,7 @@
                 </li>
 	            <div class="sidenote">Use an Operator block.</div>
                 <li>Change the <code>pinwheel</code> script so that it will accept a <em>positive</em> value (between 0 and 100) for <var>backup</var>.</li>
-            </ol>
-        </div>
-        
-        <div class="examFullWidth">
-            <div class="comment">AAP-3.C.1, AAP-2.K.2</div>
-            <div class="pseudop">
-                The procedure definition for the custom <code>pinwheel</code> command<br />
-                <img class="indent" src="/bjc-r/img/1-introduction/pinwheel-definition.png" alt="pinwheel, branches: (number of branches)
-{
-    repeat(number of branches)
-    {
-        move (100) steps
-        move (-37) steps
-        turn clockwise (360 / number of branches) degrees
-    }
-}" title="pinwheel, branches: (number of branches)
-{
-    repeat(number of branches)
-    {
-        move (100) steps
-        move (-37) steps
-        turn clockwise (360 / number of branches) degrees
-    }
-}" /><br />
-                would be written as<br />
-                <div class="pre-container indent"><pre>
-PROCEDURE pinwheel(numberOfBranches)
-{
-    REPEAT numberOfBranches TIMES
-    {
-        move(100)
-        move(-37)
-        turn_clockwise(360 / numberOfBranches)
-    }
-}</pre></div> or <img class="inline" src="/bjc-r/img/1-introduction/pinwheel-blocktran.png" alt="PROCEDURE pinwheel(numberOfBranches)
-{
-    REPEAT numberOfBranches TIMES
-    {
-        move (100)
-        move (-37)
-        turn_clockwise (360 / numberOfBranches)
-    }
-}" title="PROCEDURE pinwheel(numberOfBranches)
-{
-    REPEAT numberOfBranches TIMES
-    {
-        move (100)
-        move (-37)
-        turn_clockwise (360 / numberOfBranches)
-    }
-}" />
-            </div>
-            <div class="endnote">
-                <div class="pseudop">The procedures <pre class="inline">move()</pre> and <pre class="inline">turn_clockwise()</pre> aren't built in to the AP's language so they are written in lower case like other programmer-defined procedures.</div>
-                <div class="pseudop">Notice that the hat block, <img class="inline nopadtb" src="/bjc-r/img/1-introduction/pinwheel-hat-block.png" alt="pinwheel, branches: (number of branches)" title="pinwheel, branches: (number of branches)" />, would be written as <pre class="inline">PROCEDURE pinwheel(numberOfBranches)</pre>. The word <pre class="inline">PROCEDURE</pre> tells you that that line of the code is like a hat block; the variable name in the parentheses on that line is the input that the procedure takes.</div>
-            </div>
-        </div>
-                
-
-        <div class="forYouToDo">
-            <div class="todo">
-                <ul>
-                    <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
-                    <p>DELETE <em>after</em> Brian and Mary finish their TODOs below. --MF, 6/15/20</p>
-                    <p>From Dan's work at San Mateo: U1.3.4.5 I really like how pinwheel is the generic block but you then ask them to make specific versions of "polygon" and "asterisk" based on inputs to pinwheel. Out of 15 groups, I probably saw 6 of them who, when asked to show their pinwheel block, had not "connected" all three inputs to their code below. That is, they hadn't dragged the input variables down, so the pinwheel was only responding to "number of turns". So there's something wrong there in that the task asks them to add "size" but nothing asks them to test it. <s>These kids also didn't connect "backup" so that means they must have skipped U1.3.4.7.</s> --MF, 9/5/17</p>
-                </ul>
-            </div>
-            
-            <ol start="5">
+           
                 <li>
                 	Add another input called <var>size</var> to control the input to the <em>first</em> <code>move</code> block.<br />
                     <img class="indent" src="/bjc-r/img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs.png" width="700" alt="pinwheel, branches: (number of branches) size: (size) backup: (backup) hat block" title="pinwheel,  branches: (number of branches) size: (size) backup: (backup) hat block"/>
@@ -169,46 +101,33 @@ PROCEDURE pinwheel(numberOfBranches)
 			<ol start="8">
 				<li>Tidy up the code in your project, if necessary.</li>
 			</ol>
-		</div>
-
-        <div class="examFullWidth">
-            <div class="comment">AAP-3.A.5</div>
-            <div class="pseudop">This instruction <img class="inline" src="/bjc-r/img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs1.png"  height="50" alt="setup; pinwheel, branches: (6) size: (80) backup: (20)" title=" pinwheel, branches: (6) size: (80) backup: (20)" /> would be written as <pre class="inline">Pinwheel(6, 80, 20)</pre> or <img class="nopadtb" src="/bjc-r/img/2-complexity/pinwheel-blocktran.png" alt="a white rounded rectangle containing first the word 'PINWHEEL' in all caps and then a smaller white rectangle containing the inputs '6, 80, 20'" title="a white rounded rectangle containing first the word 'PINWHEEL' in all caps and then a smaller white rectangle containing the inputs '6, 80, 20'" />.</div>
-            <p>You may hear people use the term "pseudocode" to refer to this pseudo-language used on the AP CS Principles exam, but it's <em>not</em> pseudocode. Pseudocode isn't a programming language at all, it's the use of normal human language to describe an algorithm.</p>
-        </div>
-        
+		</div>        
             
-        <div class="ifTime">
+        <h3>Advanced Learning - Circle</h3>
+        <div class="forYouToDo">
             <ol start="9">
 				<li>Find inputs to <code>pinwheel</code> that make the result look like a circle.</li>
             </ol>
         </div>
-       
         
-		<div class="takeItTeaser">
+        <h3>Advanced Learning - Overlapping Circles</h3>
+		<div class="submission">
 		<img alt="Kandinsky-style overlapping circles" title="Kandinsky-style overlapping circles" src="/bjc-r/img/1-introduction/Kandinsky/Stage (1).png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<img alt="Kandinsky-style overlapping circles" title="Kandinsky-style overlapping circles" src="/bjc-r/img/1-introduction/Kandinsky/Stage (2).png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<img alt="Kandinsky-style overlapping circles" title="Kandinsky-style overlapping circles" src="/bjc-r/img/1-introduction/Kandinsky/Stage (3).png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<img alt="Kandinsky-style overlapping circles" title="Kandinsky-style overlapping circles" src="/bjc-r/img/1-introduction/Kandinsky/Stage (7).png">
-		</div>
+        <br />
 
-        <div class="todo">Brian needs to do the alt/title text in here. --MF, 6/15/20</div>
-        <div class="takeItTeased">
-			<img class="imageRight" width="300" src="/bjc-r/img/1-introduction/kandinsky-several-circles.jpg" alt="painting by Kandinsky" title="painting by Kandinsky">
-            <ol type="A">
-				<li>On the right is a painting by Vassily Kandinsky.  The four pictures above were inspired by it, but the sizes and placement of the circles in the original were carefully chosen, whereas the ones above are random.  Also, Kandinsky's solid circles aren't quite uniform in color.  For example, the green circle near the top right of the picture has a light green outer border, a somewhat darker green inside, a blue-green inner border, and black inside that.
+			<img class="indent" width="300" src="/bjc-r/img/1-introduction/kandinsky-several-circles.jpg" alt="painting by Kandinsky" title="painting by Kandinsky"><br />
+            <ol>
+				<li>Above is a painting by Vassily Kandinsky.  The four pictures above were inspired by it, but the sizes and placement of the circles in the original were carefully chosen, whereas the ones above are random.  Also, Kandinsky's solid circles aren't quite uniform in color.  For example, the green circle near the top right of the picture has a light green outer border, a somewhat darker green inside, a blue-green inner border, and black inside that.
 				<div class="narrowpurple">When two solid circles overlap, you can see both colors, or rather, a color in between the two.  To achieve that effect in Snap<em>!</em>, before drawing the second circle, use the <img class="inline" src="/bjc-r/img/1-introduction/set-transparency.png" alt="" title="" /> block.  A transparency of 0 means you see only the new color; a transparency of 100 means you see only the old color.  In-between values determine which color is stronger in the overlapping area.
 				</div>
 				Most of Kandinsky's circles are solid, but a few aren't. most notably the large white "halo" near the middle of the painting.  His hollow circles don't have a constant width; if you want yours to look like his, change the pen size a little as you're drawing.  But of course you don't have to make your art look exactly like his, nor exactly like the examples above.  Use them for inspiration, but you're the artist.
 				</li>
-                <li>
-                    Make a picture that looks more like a real pinwheel:<br />        
-                    <img class="indent" src="/bjc-r/img/1-introduction/pinwheel.png" height="210" alt="pinwheel photo" title="pinwheel photo" /><br />
-                    <small>Copyright 2010 <a href="http://asubtlerevelry.com/a-pinwheel-tutorial-the-easiest-ever/" title="A Pinwheel Tutorial- The Easiest Ever" target="_blank">Victoria Hudgins</a>.  Used by permission.</small>
-                    <p>(Save your project first; you'll need the <code>pinwheel</code> block you already have later.)</p>
-                    <p>It doesn't have to look exactly like the photo.  But each arm of a pinwheel is essentially two triangles.  You may find the <img src="/bjc-r/img/1-introduction/fill.png" alt="fill block" title="fill block" /> block helpful.</p>
-                </li>
             </ol>
+            <p>(Save your project first; you'll need the <code>pinwheel</code> block you already have later.)</p>
+            <strong>CREATE AN ASSIGNMENT</strong>
         </div>
        
 
