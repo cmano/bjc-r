@@ -278,7 +278,7 @@ img.noshadow {
         .takeItTeaser {border-bottom-width: 0px;}
         .takeItTeased {border-top-width: 0px;}
 
-        .submission {border-color: orange;} /* CDM: selection */
+        .submission {border-color: #4A6CD4;} /* CDM: selection. Using ifTime color since those sections aren't used for CS1030*/
         .forYouToDo {border-color: #62C213;} /* Operators Palette */
         .dialogue {border: 2px solid #0494DC; background-color: #FFFFFF;} /* Sensing Palette*/
         .ifTime {border-color: #4A6CD4;} /* Motion Palette: 4A6CD4 (TINT:a5b6ea) */
