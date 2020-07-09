@@ -28,17 +28,6 @@
         </div>
 
         <div class="takeNote">The <code>mod</code> block <strong>reports the remainder</strong> when the first input is divided by the second. For example, <img src="/bjc-r/img/1-introduction/17-mod-5.png" alt="(17) mod (5)" title="(17) mod (5)" /> reports 2 because when 17 is divided by 5, the remainder is 2. When one number divides another evenly, the remainder is 0. So for example, <img src="/bjc-r/img/1-introduction/15-mod-5.png" alt="(15) mod (5)" title="(15) mod (5)" /> reports 0.</div>
-        <div class="examFullWidth">
-            <div class="pseudop">
-                <div class="sidenote">Different programming languages have different ways of handling negative inputs to the mod function. So you won't see any negative numbers used with mod on the exam.</div>
-                <strong>The <code>mod</code> operator:</strong> The expression <img class="inline nopadtb" src="/bjc-r/img/1-introduction/17-mod-5.png" alt="(17) mod (5)" title="(17) mod (5)" /> would be written as <pre class="inline">17 MOD 5</pre> on the exam. If you see an expression with variables as input to <code>mod</code>, such as <pre class="inline">a MOD b</pre>, you can assume that <var>a</var> is zero or positive, and <var>b</var> is strictly positive (because you can't divide by 0).
-            </div>
-            <div class="comment">AAP-2.B.5, AAP-2.C.1, AAP-2.C.2, AAP-2.C.3, AAP-2.C.4</div>
-            <div class="pseudop">On the exam, you may see these four arithmetic operators: <pre class="inline">+</pre>,  <pre class="inline">-</pre>,  <pre class="inline">*</pre>, <pre class="inline">/</pre> (plus, minus, times, divide) as well as <pre class="inline">MOD</pre>. Arithmetic operators are part of most programming languages.  (Most text languages use <pre class="inline">*</pre> rather than <pre class="inline">&times;</pre> for multiplication because <pre class="inline">&times</pre> isn't on most keyboards, and because it looks too much like the letter x.)</div>
-            <div class="comment">AAP-2.L.2</div>
-            <div class="pseudop"><strong>Order of operations:</strong> In a block language, the nesting of blocks determines the order of operations.  For example, in <img class="inline nopadtb" src="/bjc-r/img/6-computers/3-times(5+4).png" alt="3 × (5 + 4)" title="3 × (5 + 4)" /> you can <em>see</em> that the <code>+</code> block is an input to the <code>&times;</code> block, so the expression means 3&times;(5+4). Similarly, <img class="inline nopadtb" src="/bjc-r/img/6-computers/(3-times-5)+4.png" alt="(3 × 5) + 4" title="(3 × 5) + 4" />  means (3&times;5)+4. In Snap<em>!</em>, it's as if there are parentheses around <em>every</em> operation.  But in text languages, you can write <pre class="inline">3 * 4 + 5</pre> 
-            without parentheses, so they need the rules you learn in math class (multiplication before addition, and so on). The <code>mod</code> operator is like multiplication and division; it happens <em>before</em> addition and subtraction. So for example, <pre class="inline">7 + 5 MOD 2 - 6</pre> means <pre class="inline">7 + 1 - 6</pre>, which is, of course, 2.</div>
-        </div>
         
         <div class="forYouToDo">
 			<ol start="3">
@@ -58,45 +47,6 @@
                 </li>
                 <li><img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" /></li>
             </ol>
-        </div>
-
-        <div class="examFullWidth">
-            <div class="comment">AAP-2.H.2</div>
-            <div class="sidenote">
-                <div class="pseudop">The procedures <pre class="inline">move()</pre> and <pre class="inline">turn_clockwise()</pre> aren't built in to the AP's language so they are written in lower case like other programmer-defined procedures.</div>
-            </div>
-            <div class="pseudop">
-                The conditional expression 
-                <img class="inline" src="/bjc-r/img/2-complexity/if-example-preview-fractal-art.png" alt="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}" title="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}" /> 
-                would be written as 
-                <div class="pre-container"><pre class="inline">
-IF(size &gt; 15)
-{
-    REPEAT 4 TIMES
-    {
-        move(size)
-        turn_clockwise(90)
-    }
-}</pre>
-                </div>
-                or 
-                <img class="inline" src="/bjc-r/img/2-complexity/if-blocktran.png" alt="IF(size &gt; 15)
-{
-    REPEAT 4 TIMES
-    {
-        move(size)
-        turn clockwise(90)
-    }
-}" title="IF(size &gt; 15)
-{
-    REPEAT 4 TIMES
-    {
-        move(size)
-        turn clockwise(90)
-    }
-}" />
-            </div> 
-            <p>As in Snap<em>!</em>, if the condition <code>(</code><var>size</var><code>) &gt; 15</code> is <code>true</code>, the code inside the <code>if</code> statement runs; if the condition is <code>false</code>, the code does not run.</p>
         </div>
         
         <div class="forYouToDo">
@@ -184,7 +134,7 @@ IF(size &gt; 15)
             </ol>
 		</div>
         
-        <div class="ifTime">
+        <div class="forYouToDo">
 			<ol start="9">
 				<li>
                     Build a predicate that tests whether its input is an integer. You may find <img src="/bjc-r/img/blocks/round-a-number.png" alt="round ()" title="round ()"> useful.<br />
@@ -194,7 +144,7 @@ IF(size &gt; 15)
 			</ol>
 		</div>
         <!--<div class="endnote">You can <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/3-importing-exporting.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">import</a> your <code>integer?</code>, <code>between?</code>, and <code>even?</code> predicates into other projects when you need them.</div>-->
-	<div class="takeItFurther">
+	<div class="submission">
 		<p>Open your 
     	    <strong>U2L3-Dots</strong> project, and save it again as <strong>U2L4-DotsTIF</strong>. Remind yourself about how the pictures are determined by the Boolean expression used.
               <ol type="A">
