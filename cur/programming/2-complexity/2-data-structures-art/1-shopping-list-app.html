@@ -52,13 +52,6 @@
             </ol>
         </div>
         
-        <div class="examFullWidth">
-            <div class="comment">AAP-1.D.7 bullet 2</div>
-            <div class="pseudop">The assignment instruction <img class="inline" src="/bjc-r/img/2-complexity/example-blank-list-assignment.png" alt="set (shopping list) to (list)" title="set (shopping list) to (list)" /> would be written as <pre class="inline">shoppingList &leftarrow; []</pre> or <img class="" src="/bjc-r/img/2-complexity/shoppinglist-empty-list-assignment-blocktran.png" alt="shoppingList ← []" title="shoppingList ← []" />.</div>
-            <div class="comment">AAP-1.D.7 bullet 1</div>
-            <div class="pseudop">The assignment instruction <img class="inline" src="/bjc-r/img/2-complexity/example-list-assignment.png" alt="set (shopping list) to {apples, bread, carrots, rice, pasta}" title="set (shopping list) to {apples, bread, carrots, rice, pasta}" /> would be written as <pre class="inline">shoppingList &leftarrow; [apples, bread, carrots, rice, pasta]</pre> or <img class="" src="/bjc-r/img/2-complexity/shoppinglist-full-list-assignment-blocktran.png" alt="shoppingList ← [apples, bread, carrots, rice, pasta]" title="shoppingList ← [apples, bread, carrots, rice, pasta]" />. (In this app, you'll want the <code>shopping list</code> to begin empty, and then the user will <code>add</code> or <code>insert</code> additional grocery items one at a time.)</div>
-        </div>
-        
         <p>
             <div class="vocabBig">
                 <div class="commentBig">AAP-1.C.2</div>
@@ -72,13 +65,6 @@
         </p>
         <div class="comment">AAP-1.D.6</div>
         <p>Assigning a list to a variable lets you use one name to represent all the elements of a list as a unit.</p>
-        
-        <div class="examFullWidth">
-            <div class="comment">AAP-2.N.1 bullet 4</div>
-            <div class="pseudop"><img class="inline" src="/bjc-r/img/2-complexity/insert-tomatoes-at-2-of-shopping-list.png" alt="insert (tomatoes) at (2) of (shopping list)" title="insert (tomatoes) at (2) of (shopping list)" /> would be written as <pre class="inline">INSERT(shoppingList, 2, "tomatoes")</pre> or <img class="inline" src="/bjc-r/img/2-complexity/insert-blocktran.png" alt="INSERT(shoppingList, 2, 'tomatoes')" title="INSERT(shoppingList, 2, 'tomatoes')" />.</div>
-            <div class="comment">AAP-2.N.1 bullet 5</div>
-            <div class="pseudop"><img class="inline" src="/bjc-r/img/2-complexity/add-tomatoes-to-shopping-list.png" alt="add (tomatoes) to (shopping list)" title="add (tomatoes) to (shopping list)" /> would be written as <pre class="inline">APPEND(shoppingList, "tomatoes")</pre> or <img class="inline" src="/bjc-r/img/2-complexity/add-blocktran.png" alt="APPEND(shoppingList, 'tomatoes')" title="APPEND(shoppingList, 'tomatoes')" />.</div>
-        </div>
         
         <div class="forYouToDo">
             <ol start="3">
@@ -98,65 +84,12 @@
     
         <p>You can also remove items from a list using <img class="inline" src="/bjc-r/img/blocks/delete.png" alt="delete (1) of 'list input slot'" title="delete (1) of 'list input slot'" />. The <code>delete</code> block takes an item number and a list as input and it removes the item at that position from the list.</p>
     
-        <div class="examFullWidth">
-            <div class="pseudop">
-                <div class="comment">AAP-2.N.1 bullet 6</div>
-                <img class="inline" src="/bjc-r/img/2-complexity/delete-item-2-of-shopping-list.png" alt="delete item (2) of (shopping list)" title="delete item (2) of (shopping list)" /> would be written as <pre class="inline">REMOVE(shoppingList, 2)</pre> or <img class="inline" src="/bjc-r/img/2-complexity/remove-blocktran.png" alt="REMOVE(shoppingList, 2)" title="REMOVE(shoppingList, 2)" />.
-            </div>
-        </div>
-    
         <div class="forYouToDo">
 			<ol start="7">
 				<li>Write a script for the "Delete Item" button sprite so that when that sprite is clicked, it will ask the user to "Enter the number of the grocery item you wish to delete," and then remove the item with that number from the grocery list.</li>
                 <li>Test your "Delete Item" button.</li>    
 			</ol>
 		</div>
-        
-        <div class="examFullWidth">
-            <div class="pseudop">
-                The items in a list are <em>values</em>, so <strong>you can use <code>item of</code> anywhere you can use any other expression</strong>. For example:
-                <ul>
-                    <div class="comment">AAP-2.N.1 bullets 2 and 3</div>
-                    <li>
-                        You can assign a list item to a variable. 
-                        <a href="#hint-assigning-element-to-variable" data-toggle="collapse" title="You can assign a list item to a variable. On the exam...">On the exam...</a>
-                        <div id="hint-assigning-element-to-variable" class="collapse">
-                            <ul>
-                                <li><img class="inline" src="/bjc-r/img/2-complexity/assigning-element-to-variable.png" alt="set (my favorite food) to item (3) of (shopping list)" title="set (my favorite food) to item (3) of (shopping list)" /> would be written as <pre class="inline">myFavoriteFood &leftarrow; shoppingList[3]</pre> or <img class="inline" src="/bjc-r/img/2-complexity/assigning-element-to-variable-blocktran.png" alt="myFavoriteFood &leftarrow; shoppingList[3]" title="myFavoriteFood &leftarrow; shoppingList[3]" /></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        You can assign <em>any</em> value to a list item (a number, a string, a sprite, a costume, a script, another list, etc.). <a href="#hint-assigning-anything-to-element" data-toggle="collapse" title="You can assign <em>any</em> value to a list item (a number, a string, a sprite, a costume, a script, another list, etc.). On the exam...">On the exam...</a>
-                        <div id="hint-assigning-anything-to-element" class="collapse">
-                            <ul>
-                                <li>
-                                    <img class="inline" src="/bjc-r/img/2-complexity/assigning-variable-to-element.png" alt="replace item (2) of (shopping list) with (your favorite food)" title="replace item (2) of (shopping list) with (your favorite food)" /> would be written as <pre class="inline">shoppingList[2] &leftarrow; yourFavoriteFood</pre> or <img class="inline" src="/bjc-r/img/2-complexity/assigning-variable-to-element-blocktran.png" alt="shoppingList[2] &leftarrow; yourFavoriteFood" title="shoppingList[2] &leftarrow; yourFavoriteFood" />.
-                                </li>
-                                <li>
-                                    <img class="inline" src="/bjc-r/img/2-complexity/assigning-element-to-element.png" alt="replace item (1) of (shopping list) with (item (3) of (shopping list))" title="replace item (1) of (shopping list) with (item (3) of (shopping list))" /> would be written as <pre class="inline">shoppingList[1] &leftarrow; shoppingList[3]</pre> or <img class="inline" src="/bjc-r/img/2-complexity/assigning-element-to-element-blocktran.png" alt="shoppingList[1] &leftarrow; shoppingList[3]" title="shoppingList[1] &leftarrow; shoppingList[3]" />.
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    
-        <div class="examFullWidth">
-            <p>
-                When you run this script in Snap<em>!</em>, the second line of code assigns to <var>shopping list 2</var> the value of <var>shopping list</var> (that is, the same list, not a copy). So, the third line of code modifies <em>both</em> variables: <br />
-                <img class="indent" src="/bjc-r/img/2-complexity/example-list-by-reference.png" alt="set(shopping list) to (list(apple)(banana))
-set(shopping list 2) to (shopping list)
-add (carrot) to (shopping list)" title="set(shopping list) to (list(apple)(banana))
-set(shopping list 2) to (shopping list)
-add (carrot) to (shopping list)" />
-                <img class="indent" src="/bjc-r/img/2-complexity/example-list-by-reference-stage.png" alt="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" title="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" /><br />
-            </p>
-            <div class="comment">AAP-1.D.7 bullet 3, AAP-2.N.2</div>
-            <div class="pseudop">However on the exam, the statement <pre class="inline">shoppingList2 &leftarrow; shoppingList</pre> makes a <em>copy</em> of the list. So modifying one of them <em>does not</em> modify the other.</div>
-            <p>The rules for how to use lists and how they behave differ depending on the programming language you are using.</p>
-        </div>
 
         
 	</body>
