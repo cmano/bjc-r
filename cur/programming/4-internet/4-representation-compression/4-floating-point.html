@@ -113,12 +113,6 @@
           <img class="indent" src="/bjc-r/img/4-internet/zero-div-zero-reporting-NaN.png" alt="(0) / (0) reporting NaN" title="(0) / (0) reporting NaN" />
         </div>
         
-        <div class="takeItFurther">
-            <ol type="A">
-                <li>Imagine a <em>decimal</em> floating point representation with one significant digit, and a range of exponents from 10<sup>-2</sup> to 10<sup>2</sup>.  The smallest positive number representable in this notation is 0.01 (1×10<sup>-2</sup>) and the largest is 900 (9×10<sup>2</sup>).  Sketch a number line from 0 to 1000 and mark all of the positive values representable in this notation.  What can you say about the spacing of values?  How many fractional values are representable?  How many integer values less than 1000 are <em>not</em> representable?  What are the strengths and weaknesses of this choice of representable values?  (Real floating point has many more representable values, of course, but the way they're spaced on the number line is similar to this.)</li>
-            </ol>
-        </div>
-        
         <p><strong>How does a programming language know whether to interpret a bit sequence as an integer, a floating point, a text string of Unicode characters, an instruction, or something else?</strong> <div class = "comment"> Does this explain my lament above?  If so, can we move it up?
         <br />
         No, sorry.  The type encoding works fine. In bignum mode you get correct answers. In non-bignum (floating point), the issue is that in <em>binary</em> floating point, 1/10 is an infinite fraction, like 1/3 in decimal. So roundoff errors are possible. --bh</div>Programming languages differ in how they do this, but there's always some <em>extra</em> bit sequence that encodes the <em>data type</em> of any sequence of bits that tells the computer how to interpret it.</p>
