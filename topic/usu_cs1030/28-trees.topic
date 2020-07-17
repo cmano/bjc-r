@@ -1,9 +1,6 @@
 title: Lab 28
 
 {
-
-	raw-html:<p>After the Create Task, all of the CSP curriculum framework has been addressed. Units 6&ndash;8 contain additional material that’s important to computer science, but some or all of these units may be covered after the AP exam.</p>
-
 heading: Lab 28: Trees
 	resource: Recursive Tree [/bjc-r/cur/programming/7-recursion/1-trees/1-recursive-tree.html]
 	resource: The Base Case [/bjc-r/cur/programming/7-recursion/1-trees/2-base-case.html]
