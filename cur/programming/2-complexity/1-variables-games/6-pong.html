@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Lab 6: Games, Page 6</title>
+    </head>
+    
+    <body>
+		<h2>Lab 6 Assignment</h2>
+        <div class="learn">
+        	<strong>In this project,</strong> you are going to model a computer game called Pong, first developed by Atari in 1972. You will write the code for the paddle which will allow it to move up and down based on user keyboard input and also write the code for the ball which will allow it to bounce every time it hits a wall or the paddle.<br />
+        	<img class="indent" src="/bjc-r/img/1-introduction/Pong_img/pongAnimation.gif" width="325" alt="Game of Pong" title="Game of Pong"/>
+        </div>
+        
+        <div class="submission" id="first">
+            <ol>
+                <!--<li>Play with the program <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U1L5Pong_Teacher&hideControls" target="_blank"> linked here </a>to get a feel how the game works. Use the up and down arrow keys to move the paddle. The initial angle at which the ball starts is random, so if it is not to your liking, you can reload the page for a different initial angle.</li>-->
+                <h3>Planning</h3>
+                <li>
+                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                    Discuss with your partner the mathematics behind the ball bouncing off the paddle. How does the initial direction of the ball as it hits the paddle relate to the final direction of the ball as it bounces off the paddle?  The following diagram may help. <br />
+                    <img class="indent" src="/bjc-r/img/1-introduction/Pong_img/Bounce.png" height="346" alt="Initial and final directions of ball" title="Initial and final directions of ball" />
+                </li>
+                <h3>Requirements</h3>
+
+                <li>
+                    When the game starts let the player select if there is one or two players
+                </li>
+                <li>
+                    Let the players enter their name and select paddle and ball styles
+                    <li>
+                        Use a basic style with a filled rectangle and circle.
+                    </li>
+                    <li>
+                        Create at least two other options using images.
+                    </li>
+                    <div class="sidenote">Do this on your own but if you get stuck, look at these <a href="/bjc-r/cur/programming/2-complexity/6b-pong-hints.html" target="_blank" title="Hints for the Game of Pong">hints for the Game of Pong</a> on how to proceed.</div>
+                </li>                    
+                </li>
+                <li>Paddles move up and down when the user presses the up arrow and down arrow keys (other keys as well for a 2 player game). Don't let the paddle move beyond the edges of the stage.</li>
+                <li>Write the code to start the ball moving when green flag is clicked and to bounce off the stage edges and the paddle. Note that there is a built in block to bounce off the edges.</li>
+                <li>
+                    Keep score of the game. Every time the ball passes an opponent's paddle hits the wall, the player earns a point.<br />
+                    <img class="indent" src="/bjc-r/img/1-introduction/Pong_img/ScoreVariable.png" height="200" alt="Make variable score" title="Make variable score"/>
+                </li>
+                <li>
+                    Show the current score somewhere on the screen.
+                </li>
+                <li> 
+                    For a one-player game, let the second paddle be driven automatically by the computer. You should use randomness in some way so the computer is not a perfect player. Hint: You can automate the second paddle by using the following block from the Sensing menu:<br />
+                    <img class="indent" src="/bjc-r/img/1-introduction/Pong_img/yPositionofBallSensing.png" alt="(y position) of (Ball)"  title="(y position) of (Ball)" />
+                </li>
+                <li>
+                    After a player as earned 5 points display a message congratulating the player by name and show the final score.
+                </li>
+
+            </ol> 
+        </div>    
+        
+    </body>
+</html>
