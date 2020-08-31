@@ -7,20 +7,16 @@
 	</head>
 
 	<body>    
-		<h2>Vary Your Tree</h2>
+		<h2>Lab 28 Assignment: Vary Your Tree</h2>
 		<div class="learn">
             <p>
-                <strong>On this page,</strong> you will make experiment freely with the <code>tree</code> procedure to see how you can modify the appearance of the result.<br />
+                <strong>In this assignment,</strong> you will make make changes to the <code>tree</code> procedure to see how you can modify the appearance of the result.<br />
                 <img class="indent" src="/bjc-r/img/7-recursion/thicktree.png" alt="tree with thick trunk" title="tree with thick trunk">
                 <img src="/bjc-r/img/7-recursion/random-tree5.jpg" alt="a fifth random tree with random branch lengths and angles" title="a fifth random tree with random branch lengths and angles"/>
             </p>
         </div>
         
-    	<div class="todo">
-            BRIAN TO INVESTIGATE<p><a href="https://piazza.com/class/h8yx482idav52y?cid=1993" target="_blank">Comments and request by Tim Matthies at Piazza</a> about how to improve this page such as including animated gifs for each task and also a <a href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=tmatthies&ProjectName=1718%20U7L1p5%20Trees%20in%20a%20Forest%20Vary%20Your%20Tree%20(solution%20file)" target="_blank">suggested solution file</a>.</p>
-            <p><a href="https://piazza.com/class/h8yx482idav52y?cid=2004" target="_blank">Tim Matthies at Piazza</a> requesting solutions for this gravity version but also for the rest of Unit 7,8.</p>
-		</div>
-        
+        <h3>A Bit More Preparation</h3>
 		<div class="forYouToDo" id="first">
         	<ol>
 				<li>
@@ -56,11 +52,23 @@
             </ol>
 		</div>
         
-        <h3>Advanced Learning</h3>
-        <div class="forYouToDo">
-        	<ol start="4">
+        <h3>Requirements</h3>
+        <div class="submission">
+            <p>You will enhance your tree program by prompting the user for various inputs, then draw a picture based on their input. Prompt for, and use, the following items. Tips on many of them are listed afterwards.</p>
+            <ol>
+                <li>
+                    Angles (User enters a number, or selects that random numbers should be used)
+                </li>
+                <li>Scaling factor (User enters a number, or selects that random numbers should be used)</li>
+                <li>Number of trees (make a forest)</li>
+                <li>Gravity strength</li>
+                <li>Leaf shape (at least 3 options)</li>
+                <li>Leaf color (at least 3 options, and a random option whee each leaf color is randomly selected)</li>
+            </ol>
+            <h4>Tips</h4>
+        	<ol>
             	<li>
-                	Put some randomness in the choice of angles and/or scaling factors. Here are some examples:<br />
+                	Add randomness in the choice of angles and scaling factors. Here are some examples:<br />
                     <div class="center">
                         <img src="/bjc-r/img/7-recursion/random-tree1.jpg" alt="a random tree with random branch lengths and angles" title="a random tree with random branch lengths and angles"/>
                         <img src="/bjc-r/img/7-recursion/random-tree2.jpg" alt="a second random tree with random branch lengths and angles" title="a second random tree with random branch lengths and angles"/>
@@ -76,20 +84,13 @@
                 	Make a forest by planting varied trees randomly on the stage.<br />
                     <img class="indent" src="/bjc-r/img/7-recursion/forest.png" alt="forest of trees" title="forest of trees" />
                 </li>
-				<li><a href="https://duckduckgo.com/?q=fractals+in+nature&iax=images&ia=images" target="_blank" title="Duck Duck Go: fractals in nature">Search</a> for images of fractals in nature.</li>
-            </ol>
-        </div> 		
-        
-		<div class="todo">Brian there is a block definition with plus signs in the TIF. Please fix. --MF, 6/19/20</div>
-        <div class="submission">
-            <ol type="A">
                 <li>
                     In nature, gravity affects how plants grow. Here is an example of the tree fractal that uses a <code>gravity</code> block to weigh down the branches  roughly the way gravity would. This tree's branching structure looks like <img src="/bjc-r/img/7-recursion/tree-with-bent-trunk.png"  height="165" alt="tree with trunk bending to the right by 5 degrees at each place where branches emerge" title="tree with trunk bending to the right by 5 degrees at each place where branches emerge">. The image below shows what happens when we add gravity. Experiment with this idea or work on whatever alternative you find interesting and beautiful.<br />
                     <img class="indent" src="/bjc-r/img/7-recursion/tree-with-gravity.jpg" alt="Tree with gravity" title="Tree with gravity"/>
                     <img class="indent" src="/bjc-r/img/7-recursion/gravity-block.png" alt="gravity(strength#){point in direction(direction+sin of (direction)*strength)}" title="gravity(strength#){point in direction(direction+sin of (direction)*strength)}" />
                 </li>
             </ol>
-        </div>
+        </div> 		
 
 	</body>
 </html>

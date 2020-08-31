@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
+        <script type="text/javascript">window.onload = function() {Gifffer();}</script>
+        <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
+		<title>Lab 20: Search Algorithms and Efficiency, Page 9</title>
+    </head>
+
+    <body>
+        <h2>Lab 20 Assignment</h2>
+        <div class="todo">
+            <p>BH: Only the last TIF is TIFfy, and I really think it should be a regular FYTD.  Coloring the picture by hand is weird.</p>
+            <p>MF: BH has reviewing to do (see TG)</p>
+        </div>
+        
+        <div class="learn">
+            In this assignment you will build on the spellchecker program. Your program will compare a binary search and linear search approach to spell checking text. After finding an incorrectly spelled word, the program report how many word comparisons you made in order to determine if the word was contained in the list. It will also make suggestions on a possible replacement.
+        </div>
+
+        <h3>Requirements</h3>
+        <div class="submission">
+            <ol>
+                <li>
+                    Ask the user for input. The user will type as much as they want.
+                </li>
+                <li>
+                    Check each word in the input with the 100,000 words(sorted) list.
+                </li>
+                <li>
+                    When a word is not found in the list, display a message to the user with the following:
+                    <ul>
+                        <li>
+                            Number of checks performed to determine the word is not in the list using the binary approach and the linear approach.
+                        </li>
+                        <li>
+                            Suggestion of a word they may have meant. Just select the word before or after the spot where the misspelled word would have been alphabetically in the list.
+                        </li>
+                    </ul>
+                    <li>
+                        Let the user decide if they want to use the suggested word. If they do, then swap the old word with the new word.
+                    </li>
+                    <li>
+                        After completing the entire list of words, display the following to the user:
+                        <ul>
+                            <li>
+                                Number of misspelled words
+                            </li>
+                            <li>
+                                How many times the user chose to use the new word
+                            </li>
+                            <li>
+                                Print the entire text the user entered, but with the new words as applicable
+                            </li>
+                        </ul>
+                    </li>
+                </li>
+            </ol>
+        </div>
+    
+        
+    
+    </body>
+</html>

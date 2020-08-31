@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Lab 8: Making Decisions, Page 7</title>
+    </head>
+
+    <body>
+    <!--<div class="todo">ST-Fix the student access issue due to hideControls</div>-->
+		<h2>Lab 8 Assignment</h2>
+        
+		<div class="learn">
+        	<strong>In this project,</strong> you will begin to build the game  Mastermind&#8482;. In this game, tries to guess the sequence of colors selected by the computer.<br />
+	        <img class="indent" src="/bjc-r/img/1-introduction/mm-snapshot.png" width="250" alt="Snapshot of game" title="Snapshot of game"/>
+        </div>
+        
+        <div class="submission" id="first">
+            <h3>
+                Game Overview
+            </h3>
+            <ul>
+                <li>The computer will select a random sequence of four colors selected from eight color choices.</li>
+                <li>The colors may not be repeated.</li>
+                <li>The player guesses a sequence. ex: rgoy (red, green, orange, yellow)</li>
+                <li>The computer reports two numbers</li>
+                <ol>
+                    <li>The number of colors in the correct position.</li>
+                    <li>The number of correct colors (colors that appear in the sequence) but are in an incorrect position.</li>
+                </ol> 
+                <li>The player continues to guess until the correct sequence is discovered.</li>
+            </ul>
+            <h3>Getting Started</h3>
+                <a class="run" href="/bjc-r/prog/1-introduction/mastermind-starter.xml"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a><br />Look at the scripts. There are six sprites, four for the player's guess and two for the feedback to the guesser. You will need to add additional color sprites.</li>
+                <div class="narrower">
+                	<p><strong>Feedback to the guesser</strong> is two numbers (as shown in each row of the game in the image above):
+                    	<ul>
+                            <li>How many colors are in the <em>correct</em> positions? (The goal is to have all four correct.)</li>
+                            <li>How many correct colors are in <em>incorrect</em> positions?</li>
+                        </ul>
+                    </p>
+                    <!--This is not included in the code. --MF
+                    The first, "correct position," sprite has two short scripts: one to be used at the beginning of the game, and the other to be used when a guess is made.-->
+                </div>
+                <h3>Requirements</h3>
+                <ol>
+                    <li>
+                        Ask the user for their name
+                    </li>
+                    <li>
+                        Prompt the user for a guess with an appropriate message. Use the initials of the color for the guess.<img src="/bjc-r/img/2-complexity/mm1.png" alt="first guess interaction" title="first guess interaction" ></li>
+                    </li>
+                    <li>
+                        Display the guess on the screen along with the number of colors in the correct position and number of correct colors in an incorrect position.
+                        <img src="/bjc-r/img/2-complexity/mm2.png" alt="four colors displayed" title="four colors displayed">
+                    </li>
+                    <li>
+                        Repeat until the player guesses correctly.
+                        <img class="indent" src="/bjc-r/img/1-introduction/mm-snapshot.png" width="250" alt="Snapshot of game" title="Snapshot of game"/>
+                    </li>
+                    <li>
+                        Show a message congratulating the winner. Include their name and the total number of guesses they used.
+                    </li>
+            </ol>
+            <div class="endnote">
+                You'll find it useful for a script to be able to tell a particular sprite what to do.  There's a tool to do that: the <img src="/bjc-r/img/1-introduction/tell.png" alt="tell (sprite) to (action)" title="tell (sprite) to (action)"> block.
+                <br />
+                For example:<img src="/bjc-r/img/1-introduction/tell-alonzo.png" height="82" alt="tell (Alonzo) to (say ...)" title="tell (Alonzo) to (say ...)"><img src="/bjc-r/img/1-introduction/tell-correct.png" height="83" alt="tell (correct position) to (show value (# correct))" title="tell (correct position) to (show value (# correct))">
+            </div>
+        </div>
+        
+    
+    </body>
+</html>

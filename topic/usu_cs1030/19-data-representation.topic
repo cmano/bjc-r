@@ -11,6 +11,7 @@ heading: Lab 19: Data Representation and Compression
 	resource: Binary Representation [/bjc-r/cur/programming/4-internet/4-representation-compression/5-binary.html]
 	raw-html: <div class="todo">Before we drop this entirely, I want to take a quick look for any aspects that might be nice as TIF content on the Binary page. --MF, 8/15/19<ul><li><a href="/bjc-r/cur/programming/4-internet/4-representation-compression/6-hexadecimal.html">Hexadecimal Representation</a></li><li><a href="/bjc-r/cur/programming/4-internet/4-representation-compression/7-more-hex.html">More About Hexadecimal</a></li></ul></div>
 	quiz: Data Compression [/bjc-r/cur/programming/4-internet/4-representation-compression/6-compression.html]
+    resource: Other Data Representation [/bjc-r/cur/programming/4-internet/4-representation-compression/7-other-data-representation.html]
 
     raw-html:<div class="todo">Teachers are <a href="https://piazza.com/class/h8yx482idav52y?cid=2907">disappointed</a> that HEX is gone. Any reason for it not to be an optional project? --MF, 5/23/20</div>
 

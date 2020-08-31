@@ -11,6 +11,7 @@ heading: Lab 20: Search Algorithms and Efficiency
     quiz: Heuristic Solutions [/bjc-r/cur/programming/5-algorithms/1-searching-lists/6-heuristics.html]
     resource: Removing Duplicates [/bjc-r/cur/programming/5-algorithms/1-searching-lists/7-comparing-search-algorithms.html]
     resource: Parallelism [/bjc-r/cur/programming/5-algorithms/1-searching-lists/8-sequential.html]
+    resource: Advanced Spell Checker [/bjc-r/cur/programming/5-algorithms/1-searching-lists/9-spellcheck-suggest.html]
 
 
 }
