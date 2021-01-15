@@ -262,14 +262,14 @@ img.noshadow {
   margin-bottom: .2em;
 }
 
-.submission, .forYouToDo, .ifTime, .dialogue, .takeItFurther, .takeNote, .endnote, .narrower, .narrowblue, .narrowpurple, .time , .learn {
+.extraHelp, .submission, .forYouToDo, .ifTime, .dialogue, .takeItFurther, .takeNote, .endnote, .narrower, .narrowblue, .narrowpurple, .time , .learn {
   padding: 1em;
   margin-bottom: .5em;
   margin-top: .5em;
 }
 
         /* New Graphic design - STRIPES */
-        .submission, .forYouToDo, .ifTime, .takeItFurther, .takeItTeaser, .takeItTeased {
+        .extraHelp, .submission, .forYouToDo, .ifTime, .takeItFurther, .takeItTeaser, .takeItTeased {
             border-style: solid;
             border-width: 2px;
             border-left-width: 20px;
@@ -279,6 +279,7 @@ img.noshadow {
         .takeItTeased {border-top-width: 0px;}
 
         .submission {border-color: #4A6CD4;} /* CDM: selection. Using ifTime color since those sections aren't used for CS1030*/
+        .extraHelp {border-color: #52D1DC;} /* CDM: selection*/
         .forYouToDo {border-color: #62C213;} /* Operators Palette */
         .dialogue {border: 2px solid #0494DC; background-color: #FFFFFF;} /* Sensing Palette*/
         .ifTime {border-color: #4A6CD4;} /* Motion Palette: 4A6CD4 (TINT:a5b6ea) */
@@ -310,7 +311,7 @@ img.noshadow {
   padding: 1em;
 }
 
-.submission:before, .submissionHeader, .forYouToDo:before, .forYouToDoHeader, .ifTime:before, .dialogue:before, .takeItFurther:before, .takeItTeased:before, .takeNote:before, .narrower:before, .narrowblue:before, .narrowpurple:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.sideHOM):not(.sideHOMbig):not(.todo):not(.comment):not(.commentBig):not(.takeNote):not(.collapse):not(.collapsing):not(.takeItFurther):not(.endnote):not(.vocabFullWidth):not(.pseudop), .time:before   { /* Shared Heading Formatting */ 
+.extraHelp:before, .extraHelpHeader, .submission:before, .submissionHeader, .forYouToDo:before, .forYouToDoHeader, .ifTime:before, .dialogue:before, .takeItFurther:before, .takeItTeased:before, .takeNote:before, .narrower:before, .narrowblue:before, .narrowpurple:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.sideHOM):not(.sideHOMbig):not(.todo):not(.comment):not(.commentBig):not(.takeNote):not(.collapse):not(.collapsing):not(.takeItFurther):not(.endnote):not(.vocabFullWidth):not(.pseudop), .time:before   { /* Shared Heading Formatting */ 
   font-size: 18px;
   font-weight: bold;
   line-height: 2.5em;
@@ -356,6 +357,11 @@ img.noshadow {
   margin-bottom: .5em;
 }
 
+.extraHelpDoHeader {text-indent:-40px;}
+
+.extraHelp {
+  margin-bottom: .5em;
+}
 .forYouToDoHeader {text-indent:-40px;}
 
 .forYouToDo {
