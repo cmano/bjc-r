@@ -12,7 +12,7 @@ heading:  Lab 1: Click Alonzo Game
 	resource: Improving Your Game [/bjc-r/cur/programming/1-introduction/1-building-an-app/5-finish-your-first-snap-app.html]
 
 heading: Lab 2: Gossip 
-	raw-html: <img class="imageRight noshadow" src="/bjc-r/img/1-introduction/U1L2-Gossip.jpg" alt="Image of stage with two characters talking. One says, 'my cat is in a band with Jake,' and the other says 'Oh, but... Mr. C loves my cat.'" title="Image of stage with two characters talking. One says, 'my cat is in a band with Jake,' and the other says 'Oh, but... Mr. C loves my cat.'"/>
+	raw-html: <img class="imageRight noshadow" src="/bjc-r/img/1-introduction/Lab2-Gossip.jpg" alt="Image of stage with two characters talking. One says, 'my cat is in a band with Jake,' and the other says 'Oh, but... Mr. C loves my cat.'" title="Image of stage with two characters talking. One says, 'my cat is in a band with Jake,' and the other says 'Oh, but... Mr. C loves my cat.'"/>
 	resource: Pair Programming [/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/1-pair-programming.html]
 	resource: Making Programs Talk [/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html]
 	resource: Customizing and Debugging [/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/3-customizing.html]
