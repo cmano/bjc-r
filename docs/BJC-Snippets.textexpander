@@ -439,7 +439,7 @@
 			<key>modificationDate</key>
 			<date>2015-06-26T02:23:14Z</date>
 			<key>plainText</key>
-			<string>&lt;div class="newProject"&gt;&lt;span class="text"&gt;"U1L1-Name"&lt;/span&gt;&lt;img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L1-Name" title="Create a new project called U1L1-Name" /&gt;&lt;/div&gt;
+			<string>&lt;div class="newProject"&gt;&lt;span class="text"&gt;"Lab1-Name"&lt;/span&gt;&lt;img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called Lab1-Name" title="Create a new project called Lab1-Name" /&gt;&lt;/div&gt;
 </string>
 			<key>snippetType</key>
 			<integer>0</integer>
