@@ -22,23 +22,21 @@
                     Discuss with your partner the mathematics behind the ball bouncing off the paddle. How does the initial direction of the ball as it hits the paddle relate to the final direction of the ball as it bounces off the paddle?  The following diagram may help. <br />
                     <img class="indent" src="/bjc-r/img/1-introduction/Pong_img/Bounce.png" height="346" alt="Initial and final directions of ball" title="Initial and final directions of ball" />
                 </li>
+                <div class="learn">Here's some starter code and some other information to help you begin: <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/6b-pong-hints.html" target="_blank" title="Hints for the Game of Pong">The Game of Pong</a></div>
                 <h3>Requirements</h3>
-
                 <li>
-                    When the game starts let the player select if there is one or two players
-                </li>
-                <li>
-                    Let the players enter their name and select paddle and ball styles
-                    <li>
-                        Use a basic style with a filled rectangle and circle.
-                    </li>
-                    <li>
-                        Create at least two other options using images.
-                    </li>
-                    <div class="sidenote">Do this on your own but if you get stuck, look at these <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/6b-pong-hints.html" target="_blank" title="Hints for the Game of Pong">hints for the Game of Pong</a> on how to proceed.</div>
+                    Let each player (this is a two-player game) enter their name and select paddle and ball styles
+                    <ul>
+                        <li>
+                            Use at least ibe basic style with a filled rectangle and circle.
+                        </li>
+                        <li>
+                            Create at least two other options for paddles and the ball using images.
+                        </li>
+                    </ul>
                 </li>                    
                 </li>
-                <li>Paddles move up and down when the user presses the up arrow and down arrow keys (other keys as well for a 2 player game). Don't let the paddle move beyond the edges of the stage.</li>
+                <li>Paddles move up and down when the user presses the up arrow and down arrow keys for one player and the 'a' and 'z' keys for the other. Don't let the paddle move beyond the edges of the stage.</li>
                 <li>Write the code to start the ball moving when green flag is clicked and to bounce off the stage edges and the paddle. Note that there is a built in block to bounce off the edges.</li>
                 <li>
                     Keep score of the game. Every time the ball passes an opponent's paddle hits the wall, the player earns a point.<br />
@@ -46,10 +44,6 @@
                 </li>
                 <li>
                     Show the current score somewhere on the screen.
-                </li>
-                <li> 
-                    For a one-player game, let the second paddle be driven automatically by the computer. You should use randomness in some way so the computer is not a perfect player. Hint: You can automate the second paddle by using the following block from the Sensing menu:<br />
-                    <img class="indent" src="/bjc-r/img/1-introduction/Pong_img/yPositionofBallSensing.png" alt="(y position) of (Ball)"  title="(y position) of (Ball)" />
                 </li>
                 <li>
                     After a player as earned 5 points display a message congratulating the player by name and show the final score.
