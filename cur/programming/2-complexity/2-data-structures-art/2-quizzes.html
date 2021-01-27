@@ -25,7 +25,7 @@
         
         <p>
             You'll use a list to store your quiz items in a variable. You <em>could</em> just <a href="#hint-solidlist" data-toggle="collapse" title="put all the questions and their answers in a list like this">put all the questions and their answers in a list like this</a> and then use <img src="/bjc-r/img/blocks/item-empty-full-size.png" height="35" alt="item () of 'list input slot'" title="item () of 'list input slot'"> to retrieve each question and each answer using its index.
-            <div id="hint-solidlist" class="collapse"><img class="indent" src="/bjc-r/img/2-complexity/quiz-questions-list.png" alt="set (computer science quiz) to (list (What is the computer science term for looping or repetition?) (iteration) (What is the name for the abstraction in a program that can hold a value?) (variable) (What kind of variable is available only in the part of the program where it is defined?) (local variable))" title="set (computer science quiz) to (list (What is the computer science term for looping or repetition?) (iteration) (What is the name for the abstraction in a program that can hold a value?) (variable) (What kind of variable is available only in the part of the program where it is defined?) (local variable))"></div>
+            <div id="hint-solidlist" class="collapse.show"><img class="indent" src="/bjc-r/img/2-complexity/quiz-questions-list.png" alt="set (computer science quiz) to (list (What is the computer science term for looping or repetition?) (iteration) (What is the name for the abstraction in a program that can hold a value?) (variable) (What kind of variable is available only in the part of the program where it is defined?) (local variable))" title="set (computer science quiz) to (list (What is the computer science term for looping or repetition?) (iteration) (What is the name for the abstraction in a program that can hold a value?) (variable) (What kind of variable is available only in the part of the program where it is defined?) (local variable))"></div>
             That might be ok for the first quiz item (you could use <img class="inline nopadtb" src="/bjc-r/img/2-complexity/item-1-of-csquiz.png" alt="item (1) of (computer science quiz)" title="item (1) of (computer science quiz)"> to get the first question and <img class="inline nopadtb" src="/bjc-r/img/2-complexity/item-2-of-csquiz.png" alt="item (2) of (computer science quiz)" title="item (2) of (computer science quiz)"> to get the first answer), but for a long quiz, you might leave out one answer by accident and then after that, the program will get questions and answers mixed up.
         </p>
         <div class="vocab">: <strong>Sublist</strong> 
@@ -33,7 +33,7 @@
         </div>
         <p>
             Instead, <a href="#hint-sublist" data-toggle="collapse" title="you can use a sublist for each question/answer pair">you can use a <em>sublist</em> for each question/answer pair</a>. Then you could choose just one of those lists at a time to work with.
-            <div id="hint-sublist" class="collapse">
+            <div id="hint-sublist" class="collapse.show">
                 <img class="indent" src="/bjc-r/img/2-complexity/quiz-questions-list-of-lists.png" alt="set (computer science quiz) to (list (list (What is the computer science term for looping or repetition?) (iteration)) (list (What is the name for the abstraction in a program that can hold a value?) (variable)) (list (What kind of variable is available only in the part of the program where it is defined?) (local variable)))" title="set (computer science quiz) to (list (list (What is the computer science term for looping or repetition?) (iteration)) (list (What is the name for the abstraction in a program that can hold a value?) (variable)) (list (What kind of variable is available only in the part of the program where it is defined?) (local variable)))">
                 <img class="indent" src="/bjc-r/img/2-complexity/item-of-item-of-script.png" alt="ask (item(1) of (item (3) of (computer science quiz))) and wait
 if (item (1) of (item (3) of (computer science quiz)) = answer) {
@@ -47,7 +47,7 @@ if (item (1) of (item (3) of (computer science quiz)) = answer) {
         <div class="comment">AAP.1.D.3</div>
         <p>
             But with nested lists (lists with sublists) it can be hard to keep track of the input numbers for <code>item of</code>, so <a href="#hint-useabstraction" data-toggle="collapse" title="a better way is to use abstraction to organize the quiz items">a better way is to <em>use abstraction</em> to organize the quiz items</a>. 
-            <div id="hint-useabstraction" class="collapse">
+            <div id="hint-useabstraction" class="collapse.show">
                 <img class="indent" src="/bjc-r/img/2-complexity/quiz-questions-list-of-adts.png" alt="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" title="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))">
                 <img class="indent" src="/bjc-r/img/2-complexity/abstracted-quiz-script.png" alt="ask (question of quiz item (item () of (computer science quiz))) and wait
 if (answer from quiz item (item () of (computer science quiz)) = answer) {
@@ -70,7 +70,7 @@ if (answer from quiz item (item () of (computer science quiz)) = answer) {
                 <div class="comment">AAP-1.A.3 second sentence</div>
                 <li>
                     Each programming language provides some <strong>primitive data types</strong> (data types that are built-in). For example, Snap<em>!</em> provides numbers, text (words and sentences), Booleans (true or false), lists, and some you haven't yet used as data (such as sprites and costumes). <a href="#hint-primitive" data-toggle="collapse" title="This menu shows all of Snap!'s primitive types.">This menu shows all of Snap<em>!</em>'s primitive types.</a>
-                    <div id="hint-primitive" class="collapse">
+                    <div id="hint-primitive" class="collapse.show">
                     <img class="indent" src="/bjc-r/img/2-complexity/isa-menu.png" alt="primitive types: number, text, Boolean, list, sprite, command, reporter, predicate" title="primitive types: number, text, Boolean, list, sprite, command, reporter, predicate"/>
                     </div>
                 </li>
@@ -104,7 +104,7 @@ if (answer from quiz item (item () of (computer science quiz)) = answer) {
         
         <div class="forYouToDo">
             <ol start="3">
-            <li><div class="newProject">	<span class="text">"U2L2-Quiz"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called U2L2-Quiz" title="Start a New Project called U2L2-Quiz" /></div></li>
+            <li><div class="newProject">	<span class="text">"Lab7-Quiz"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called Lab7-Quiz" title="Start a New Project called Lab7-Quiz" /></div></li>
 
               <div class="comment">AAP-1.D (Note that the exercise number has changed! -bh)</div>
                 <li>Build the custom <code>quiz item</code> abstract data type (both the constructor and the two selectors).</li>
