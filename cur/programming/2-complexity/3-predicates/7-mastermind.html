@@ -31,7 +31,7 @@
                 <li>The player continues to guess until the correct sequence is discovered.</li>
             </ul>
             <h3>Getting Started</h3>
-                <a class="run" href="/bjc-r/prog/1-introduction/mastermind-starter.xml"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a><br />Look at the scripts. There are six sprites, four for the player's guess and two for the feedback to the guesser. Each sprite already has all necessary costumes.</li>
+                <a class="run" href="/bjc-r/prog/1-introduction/mastermind-starter.xml"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a><br />Look at the scripts. There are six sprites, four for the player's guess and two for the feedback to the guesser. Each sprite already has all necessary costumes. There are starter scripts in the stage, the first color, and the first number (correct position) sprites. Make sure to use those to see how things work and make your life easier. Try to get all of the sprites to show the new guess first. Then you can worry about adding the code to check the users guess.</li>
                 <div class="narrower">
                 	<p><strong>Feedback to the guesser</strong> is two numbers (as shown in each row of the game in the image above):
                     	<ul>
@@ -45,28 +45,27 @@
                 <h3>Requirements</h3>
                 <ol>
                     <li>
-                        Ask the user for their name
+                        Clicking the green flag starts the game.
                     </li>
                     <li>
-                        Prompt the user for a guess with an appropriate message. Use the initials of the color for the guess.<img src="/bjc-r/img/2-complexity/mm1.png" alt="first guess interaction" title="first guess interaction" ></li>
+                        Prompt the user for their name. Save this so you can use it to make the messages personal.
+                    </li>
+                    <li>
+                        Prompt the user for a guess with an appropriate message, which includes their name. Use the initials of the color for the guess. The starter script has an example. However you need to modify this to include the user's name in the prompt. 
+                        <!-- <img src="/bjc-r/img/2-complexity/mm1.png" alt="first guess interaction" title="first guess interaction" ></li> -->
                     </li>
                     <li>
                         Display the guess on the screen along with the number of colors in the correct position and number of correct colors in an incorrect position.
                         <img src="/bjc-r/img/2-complexity/mm2.png" alt="four colors displayed" title="four colors displayed">
                     </li>
                     <li>
-                        Repeat until the player guesses correctly.
+                        Repeat until the player guesses correctly. If the user makes so many guesses the entire screen gets filled, don't worry about it. Just hit the stop button and play it again.<br />
                         <img class="indent" src="/bjc-r/img/1-introduction/mm-snapshot.png" width="250" alt="Snapshot of game" title="Snapshot of game"/>
                     </li>
                     <li>
-                        Show a message congratulating the winner. Include their name and the total number of guesses they used.
+                        Show a message congratulating the winner. Include their name and the total number of guesses they used. Your win message can look however you'd like. It does not need to match the one shown above. You may want to show a new sprite who says the congratulations message. Don't forget to include their name in the message.
                     </li>
             </ol>
-            <div class="endnote">
-                You'll find it useful for a script to be able to tell a particular sprite what to do.  There's a tool to do that: the <img src="/bjc-r/img/1-introduction/tell.png" alt="tell (sprite) to (action)" title="tell (sprite) to (action)"> block.
-                <br />
-                For example:<img src="/bjc-r/img/1-introduction/tell-alonzo.png" height="82" alt="tell (Alonzo) to (say ...)" title="tell (Alonzo) to (say ...)"><img src="/bjc-r/img/1-introduction/tell-correct.png" height="83" alt="tell (correct position) to (show value (# correct))" title="tell (correct position) to (show value (# correct))">
-            </div>
         </div>
         
     
