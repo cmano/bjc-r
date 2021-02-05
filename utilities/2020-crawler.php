@@ -146,10 +146,10 @@ function crawl_for_links($input_url) {
 		// remove topic.html?topic= from TOPIC file URLs 
 		if (substr($found_url, -5) == "topic" and strstr($urls[$i], "topic.html?topic=") != "") {
 			$urls[$i] = substr($urls[$i], 0, stripos($urls[$i], "topic.html?topic=")).substr(strstr($urls[$i], "topic.html?topic="), 17, strlen($urls[$i]));
-		} elseif (strstr($found_url, "?topic=nyc_bjc") != "") { 
+		} elseif (strstr($found_url, "?topic=usu_1030") != "") { 
 		
 		// remove other HTML file TOPIC suffixes
-			$urls[$i] = substr($urls[$i], 0, stripos($urls[$i], "?topic=nyc_bjc")); //cuts everything after "?topic=nyc_bjc"
+			$urls[$i] = substr($urls[$i], 0, stripos($urls[$i], "?topic=usu_1030")); //cuts everything after "?topic=usu_1030"
 			//NOTE: TO FIX: this breaks if there is a URL of http://bjc.edc.org; why does line 56-59 not work here?
 		}
 	
