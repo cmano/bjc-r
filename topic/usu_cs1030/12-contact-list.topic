@@ -10,6 +10,6 @@ heading: Lab 12: Contact List
     resource: Adding Birthdays [/bjc-r/cur/programming/3-lists/2-contact-list/3-modifying-adt.html]
 	resource: Selecting Specific Data [/bjc-r/cur/programming/3-lists/2-contact-list/4-looking-up-data.html]
 	quiz:Transforming Every List Item [/bjc-r/cur/programming/3-lists/2-contact-list/5-mapping-over-list.html]
-    resource: Abstract Art [/bjc-r/cur/programming/3-lists/2-contact-list/6-op-art.html]
+    resource: Movie List Project [/bjc-r/cur/programming/3-lists/2-contact-list/6-movie-list.html]
 }
    
