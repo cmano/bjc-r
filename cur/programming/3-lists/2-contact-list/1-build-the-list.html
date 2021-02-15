@@ -32,29 +32,6 @@
 			</p>
         </div>
         
-        <div class="todo">
-        	<p>There are notes from BH here that are commented out.</p>
-            <!--Brian's Notes from late July 2016:
-        	<ul>
-            	<li>I'm sad to say that everyone had trouble with my data abstraction stuff in the contact list app (3.2.4).  It's not that they couldn't do the individual steps, really; they just didn't understand how the steps were a story line.  The details that threw people are not understanding the difference between (GET PHONE) and (CONTACT PHONE) -- the first interacts with the user and the second is just a selector for contacts -- partly because the selector doesn't seem to do anything interesting enough to bother making a custom block for.  I think for 2016-17 we just flush that page, although then we have to decide whether what's left (in 3.2.1) is interestingly different from the grocery list app.  For 2017-18 one of you folks, who know how to write curriculum, should fix it.</li>
-            </ul>-->
-            <p>There is user feedback here that is commented out.</p>
-            <!--<h4><strong>Feedback:</strong></h4>
-        	<ul>
-				<p><strong>First page</strong></p>
-                <li>GH feedback 12/8/15: Make it more like a game so more people will enjoy the site</li>
-                <li>GH Feedback 1/15/16: it's unclear what the contact input for the "name (display form)" and "name (sorting form)" blocks should be</li>
-                <li>GH Feedback 1/15/16: lab causes a lot of confusion on how to reference items in nested lists, could use some sort of analogy/explanation or graphic or video or something to scaffold this</li>
-                <p><strong>Second page</strong></p>
-                <li>GH Feedback 10/27/15: I do not understand the instructions on this page at all. This is the first lab all year where I am completely baffled by the instructions.</li>
-                <li>Piazza Feedback 10/28/15: I cannot picture what the end product is supposed to look like after completed the part called "Improving Your Contact List App" Does anyone have a final product they could share with me so that I can see what we are shooting for? This is the first lesson I have encountered where I do not understand the instructions. Any help would be appreciated.</li>
-                <li>There is too much text on this page. It needs to be cut down. --MF </li>
-                <li>GH Feedback 11/30/15: The functionality of contact info is unclear. Does it report all the matching names, first and last, or only an exact match of the first or last name. etc.</li>
-                <li>GH Feedback 1/5/16: maybe provide a interactive example.</li>
-                <li>GH Feedback 1/31/16: I don't feel that this page explains the need for constructor and selector blocks very well. I had to read through this several times before I could articulate why this method was not redundancy. If you add complexity to the contact, the constructor block WOULD have to be changed. So would the selector blocks so that they pull the right item from a contact. The only benefit to creating these blocks is if other programs were to use them. Instead of having to change the item number when selecting.... But I don't think you get that from this page....</li>
-			</ul>-->
-        </div>
-        
         <div class="takeNote">
             <h4><strong>Preserve Privacy</strong></h4>
             <p>Snap<em>!</em> projects are not secure. Do not use your or your classmates' personal information.</p>
@@ -63,10 +40,9 @@
         <div class="forYouToDo" id="first">
             <ol>
 				<li>
-                    <a class="run" href="/bjc-r/prog/3-lists/Lab12-ContactList.xml"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a>
+                    <a class="run" href="/bjc-r/prog/lab-12/Lab12-ContactList.xml"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a>
                 </li>
-                <li>Create a global <var>contact list</var> variable.</li>
-                <li>Initialize <var>contact list</var> as an empty list.</li>
+                <li>Notice a global <var>contact list</var> variable. It has been initialized as an empty list.</li>
             </ol>
 		</div>
 		<div class="todo">Need to fix the yellowbox font color inside orangebox in the CSS. --MF, 11/15/19</div>
@@ -81,7 +57,7 @@
             <div class="stagedir">Betsy and Gamal are planning to build a Contact List in Snap<em>!</em>.</div>
             <div><span>Betsy:</span> We need a way to add a contact to our <var>contact list</var>.</div>
             <div><span>Gamal:</span> Each contact will be a list with the a person's name, phone number, address, email, or whatever we write.</div>
-            <div><span>Betsy:</span> <a href="/bjc-r/cur/programming/2-complexity/2-data-structures-art/2-quizzes.html?topic=usu_1030%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="In Unit 2, we created a quiz item abstract data type">In Lab 7, we created a <code>quiz item</code> abstract data type</a> to store the questions and answers in a list of quiz items. Here, we can make a <code>contact</code> abstract data type to store the data for each contact in our list of contacts.</div>
+            <div><span>Betsy:</span> <a href="/bjc-r/cur/programming/2-complexity/2-data-structures-art/2-quizzes.html?topic=usu_1030%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="In Lab 7, we created a quiz item abstract data type">In Lab 7, we created a <code>quiz item</code> abstract data type</a> to store the questions and answers in a list of quiz items. Here, we can make a <code>contact</code> abstract data type to store the data for each contact in our list of contacts.</div>
             <div class="todo">Do we need this commented out part of the dialog? --MF, 6/6/20</div>
             <!--<div><span>Gamal:</span> Yes! <em>(Gamal opens their old project, but you don't need to.)</em> Before, we used a <code>point</code> constructor to construct a list of coordinates.</div>
             <div class="stagedir">
@@ -109,6 +85,16 @@
                     <img class="indent" src="/bjc-r/img/3-lists/contact-constructor-untyped.png" alt="contact with name: () address: () phone: ()" title="contact with name: () address: () phone: ()" /><br />
                     It should report one whole contact (a list of the three items):<br />
 					<img class="indent" src="/bjc-r/img/3-lists/contact-constructor-reporting.png" alt="contact with name: (Betsy) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" title="contact with name: (Betsy Anderson) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" /><br />
+
+                    <!--Pop up image solution-->
+                    <div class="endnote">
+                        <a href="#hint-constructor" data-toggle="collapse" title="Click for an image of setting up the code inside the Block Editor.">Click after you've had a chance to try it yourself.</a>
+                        <div id="hint-constructor" class="collapse">
+                            <p>The constructor takes the input and reports a list containing the inputs. This is an example of an Abstract Data Type. </p>
+                            <img class="indent" src="/bjc-r/img/lab-12/Lab12-ContactConstructor.png" alt="Helper Image" title="Helper Image" />
+                            <!-- <img class="indent" src="/bjc-r/img/IMAGE_NAME.png" alt="Helper Image" title="Helper Image" /> -->
+                        </div>
+                    </div>
                 </li>
                 <li>
                     Write the <em>selector</em> blocks to retrieve the <code>name from contact</code>, <code>address from contact</code>, or <code>phone from contact</code>.
@@ -129,17 +115,24 @@
                             <p>Its somewhat artificial to use the constructor as the input to a selector; these images are just examples to show what the selectors should be able to do when given a contact as input. In <em>your</em> program, the selectors will take an item from the contact list as input and output the correct piece of that contact, like this:<br />
                                 <img class="indent" src="/bjc-r/img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" alt="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" title="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" />
                             </p>
-<!--
-			</div>
--->
                     </div>
+                    <!--Pop up image solution-->
+                    <div class="endnote">
+                        <a href="#hint-selectors" data-toggle="collapse" title="Click for an image of setting up the code inside the Block Editor.">Click after you've had a chance to try it yourself.</a>
+                        <div id="hint-selectors" class="collapse">
+                            <p>The selector blocks report a specific item from the ADT. This is an example of the Name from Contact selector. What changes would you need to make for the address and phone selectors. Note tht the input to the selector needs to be a Contact ADT, which is a list containing the name, address, and phone in that order. </p>
+                            <img class="indent" src="/bjc-r/img/lab-12/Lab12-NameSelector.png" alt="Helper Image" title="Helper Image" />
+                            <!-- <img class="indent" src="/bjc-r/img/IMAGE_NAME.png" alt="Helper Image" title="Helper Image" /> -->
+                        </div>
+                    </div>
+                </li>
                 </li>
 		        <li>
                     Declare input types for each selector to make it obvious that they expect a list (one whole contact) as input.<br />
                     <img class="indent" src="/bjc-r/img/3-lists/name-selector.png" alt="name from contact: ()" title="name from contact: ()" />
                     <img class="indent" src="/bjc-r/img/3-lists/address-selector.png" alt="address from contact: ()" title="address from contact: ()" />
                     <img class="indent" src="/bjc-r/img/3-lists/phone-selector.png" alt="phone from contact: ()" title="phone from contact: ()" />
-                    <div class="endnote"> You learned about <a href="/bjc-r/cur/programming/2-complexity/2-data-structures-art/2-quizzes.html?topic=usu_1030%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Specifying an Input Type">Specifying an Input Type</a> in Unit 2.</div>
+                    <div class="endnote"> You learned about <a href="/bjc-r/cur/programming/2-complexity/2-data-structures-art/2-quizzes.html?topic=usu_1030%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Specifying an Input Type">Specifying an Input Type</a> in Lab 7.</div>
                     <div class="todo">Do we need this commented out HTML? --MF, 6/6/20</div>
                     <!--<div class="endnote">
                         You could paste each of these text strings into the "Make a block" window:<br />
@@ -155,7 +148,7 @@
                     <ol>
                         <li>First, put the constructor (with input values) inside each selector (as shown above) to test that they each report the correct piece of data.</li>
                         <li>
-                            Then, use the <code>contact</code> constructor to <code>add</code> a few contacts to your contact list.
+                            Then, use the <code>contact</code> constructor to <code>add</code> a few contacts to your contact list. <img  src="/bjc-r/img/lab-12/Lab12-AddContact.png" alt="add contact" title="add contact" />
                             <div class="endnote">
                                 You can use these examples or make up your own:
                                 <table class="bordered" summary="three example contacts">
