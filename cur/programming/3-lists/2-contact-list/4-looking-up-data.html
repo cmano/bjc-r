@@ -86,20 +86,38 @@
                 <li>
                     Develop a "Delete Contact" button. 
                     <ol>
-                        <li>Move the "Delete Contact" button onto the stage.</li>
                         <li>Make the script ask the user to "Enter the name of the contact(s) you wish to delete."</li>
-                        <li>Then, use your <code>find contacts</code> block to find all the matching contacts.</li>
-                        <li>Give the user the list of matching contacts and ask them for confirmation to delete (so the user won't accidentally delete their contact).</li>
+                        <li>Then, use your <code>find contacts with name</code> block to find all the matching contacts.</li>
+                        <li>Give the user the list of matching contacts and ask them for confirmation to delete (so the user won't accidentally delete their contact). Use the <code>show</code> block to display the results variable. This will let the sprite use the <code>say</code> block to ask for confirmation.</li>
                         <li>If the user confirms that they want to delete these contacts, replace the <var>contact list</var> with a list of all contacts whose name does <em>not</em> match the input name.</li>
+                        <li>This block will look similar to the script you created to find a contact.</li>
+                        <!--Pop up image solution-->
+                        <div class="endnote">
+                            <a href="#hint-delete-1" data-toggle="collapse" title="Click for an image of setting up the code inside the Block Editor.">Click after you've had a chance to try it yourself.</a>
+                            <div id="hint-delete-1" class="collapse">
+                                <p>This script was definitely challenging. Note that there are many ways to do this. Your answer may work, or be on the right track, but not match this approach.</p>
+                                <img class="indent" src="/bjc-r/img/lab-12/Lab12-Delete-1.png" alt="Helper Image" title="Helper Image" />
+                                <!-- <img class="indent" src="/bjc-r/img/IMAGE_NAME.png" alt="Helper Image" title="Helper Image" /> -->
+                            </div>
+                        </div>
                     </ol>
                 </li>
                 <li>
                     Modify your "Delete Contact" script so that it lets the user choose which contact they want to delete when
                     <code>find</code> reports more than one.
                     <ol>
-                        <li>Write a helper block <code>delete contact</code> that takes a contact as input and removes that contact from <var>contact list</var>.</li>
-                        <li>Modify "Delete Contact" so that, if more than one contact matches the user's name input, it displays a list of the matching names and asks the user to select one by number.  (The item numbers are automatically displayed in the name list, so you don't have to worry about that part.)  Give the user a way to cancel the request instead of choosing a name.</li>
-                        <li>If <em>exactly one</em> contact matches, instead of displaying the one-item list of names, just ask the user to confirm or cancel deleting it.  (Optional.)</li>
+                        <li>Modify "Delete Contact" so that, if more than one contact matches the user's name input, it displays a list of the matching names and asks the user to select one by number.  (The item numbers are automatically displayed in the name list, so you don't have to worry about that part.).</li>
+                        <li>If the user doesn't enter a number, then consider that a cancelation.</li>
+                        <li>This script will be very similar to the previous delete script. This one will also help you on the assignment.</li>
+                        <!--Pop up image solution-->
+                        <div class="endnote">
+                            <a href="#hint-delete-2" data-toggle="collapse" title="Click for an image of setting up the code inside the Block Editor.">Click after you've had a chance to try it yourself.</a>
+                            <div id="hint-delete-2" class="collapse">
+                                <p>Notice the slight changes in the code that processes the deletion.</p>
+                                <img class="indent" src="/bjc-r/img/lab-12/Lab12-Delete-2.png" alt="Helper Image" title="Helper Image" />
+                                <!-- <img class="indent" src="/bjc-r/img/IMAGE_NAME.png" alt="Helper Image" title="Helper Image" /> -->
+                            </div>
+                        </div>
                     </ol>
                 </li>
                 <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" />
