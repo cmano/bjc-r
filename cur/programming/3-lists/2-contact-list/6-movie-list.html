@@ -19,26 +19,16 @@
         <h3>Requirements</h3>
         <div class="submission">
             <p>
-                Your movie list program will have a number of features that are similar to the contact list program you completed. Import the String and Multi-Line Input library to help you.
+                Your movie list program will have a number of features that are similar to the contact list program you completed.
             </p>
+            <!--Load a Snap File-->
+            <a href="/bjc-r/prog/lab-12/Lab12-MovieList.xml" class="run"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file." title="Click here to load this file."></a>
             <ol>
                 <li>
-                    Create the following sprites that will be used as buttons for certain functionality. You can use any image you make or find online. You can also draw your own in the paint feature in the costume tab.
-                    <ol>
-                        <li>
-                            Add movie
-                        </li>
-                        <li>
-                            Find movie
-                        </li>
-                        <li>
-                            Remove movie
-                        </li>
-                        <li>
-                            Filter stars
-                        </li>
-                    </ol>
-                    Create one additional sprite who acts as the assistant. This is the only sprite who will prompt the user for input or display responses. You can use the "Tell X to Y" block.
+                    Note the starter scripts associated with the stage and some of the button sprites.
+                </li>
+                <li>
+                    Change each of the sprites to make your program more custom to fit your style.
                 </li>
                 <li>
                     Create a constructor for a movie item. Each item should include the Title, Year Released, Rating, and Stars. Stars is your personal rating of the movie on a 5-star basis.
@@ -47,15 +37,24 @@
                     The Add Movie button should prompt the user to enter each item for the constructor one, at a time, then create the movie item and add it to a list of all movies.
                 </li>
                 <li>
-                    The Find Movie button should prompt the user to enter a key word. Then it will report a list of all movies that match. A match means the movie title contains the keyword. NOTE: MAKE A HELPER SCRIPT FOR THIS
+                    The Find Movie button should prompt the user to enter a key word. Then it will report a list of all movies that match. A match means the movie title contains the keyword.
                 </li>
                 <li>
-                    The Remove Movie button first uses the same process as the Find Movie button. Then it prompts the user to enter the number of the movie from the displayed list to remove.
+                    The Remove Movie button first uses a similar process as the Find Movie button. Then it prompts the user to enter the number of the movie from the displayed list to remove.
                 </li>
                 <li>
                     The Filter stars asks the user for a star rating, then displays all movies with that rating or better.
                 </li>
+                <li>
+                    The host should be the sprite that does all of the talking and displaying of results. The only exception is the delete process which shows the list of movies after the search as a table. This is done by showing the script variable that holds the results of the search.
+                </li>
             </ol>
+        </div>
+        <!--Extra Help-->
+        <h3>Extra Help<a name="second" class="anchor">&nbsp;</a></h3>
+        <div class="extraHelp">
+            <p>Here's a demo video of the program running. You should watch this to get some more insight on how the program should work.</p>
+            <iframe src="https://drive.google.com/file/d/19l-DzBfITitAEecppKe06rR_U47EtGIu/preview" width="960" height="540"></iframe>
         </div>
         
     
