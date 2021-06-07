@@ -57,6 +57,14 @@
 			<ol start="3">
                 <li>Make the blocks <img class="inline" src="/bjc-r/img/blocks/less-than-or-equal.png" alt="less than or equal" title="less than or equal" />, <img class="inline" src="/bjc-r/img/blocks/greater-than-or-equal.png" alt="greater than or equal" title="greater than or equal" />, and <img class="inline" src="/bjc-r/img/2-complexity/not-equal.png" alt="() not equal ()" title="() not equal ()" />.
 					(You can copy the characters &le;, &ge;, and &ne; from this page and paste them into the Snap<i>!</i> Make-a-block window.)
+                    <div class="endnote">
+                        <a href="#hint-less-than-or-equal" data-toggle="collapse" title="Click for an image of setting up the code inside the Block Editor.">Click after you've had a chance to try it yourself.</a>
+                        <div id="hint-less-than-or-equal" class="collapse">
+                            <p>If you weren't able to figure this one out, see if you can get the other two using this as a guide.</p>
+                            <img class="indent" src="/bjc-r/img/lab-8/Lab8-LessThanOrEqual.png" alt="Helper Image" title="Helper Image" />
+                            <!-- <img class="indent" src="/bjc-r/img/IMAGE_NAME.png" alt="Helper Image" title="Helper Image" /> -->
+                        </div>
+                    </div>
 				</li>
                 <li>
                     Build a predicate that tells whether an input is between two other inputs, and test it with several different cases.<br />
@@ -74,10 +82,18 @@
                             <li>You must use the <img class="nopadtb" src="/bjc-r/img/blocks/report.png" alt="report()" title="report()" /> block to report the result of reporters (including predicates).</li>
                         </ul>
                     </div>
+                    <div class="endnote">
+                        <a href="#hint-between" data-toggle="collapse" title="Click for an image of setting up the code inside the Block Editor.">Click after you've had a chance to try it yourself.</a>
+                        <div id="hint-between" class="collapse">
+                            <p>This answer is pretty close, but not quite correct. Try checking to see if 3 is between 2 and 4. Then see if 3 is between 4 and 2. See if you can add to the block to fix it.</p>
+                            <img class="indent" src="/bjc-r/img/lab-8/Lab8-Between.png" alt="Helper Image" title="Helper Image" />
+                            <!-- <img class="indent" src="/bjc-r/img/IMAGE_NAME.png" alt="Helper Image" title="Helper Image" /> -->
+                        </div>
+                    </div>
                     <!--<p><img class="indent" data-gifffer="/bjc-r/img/2-complexity/defining-even-predicate.gif" alt="defining a predicate block" title="defining a predicate block" /></p>-->
                 </li>
                 <li>
-                    Use <code>between?</code> to create a script that lets you write on the stage in three colors (depending on the height on the stage), using your mouse.<br />
+                    Use <code>between?</code> to create a script that lets you write on the stage in three colors (depending on the height on the stage), using your mouse. Hint: This is very similar to what you did on the previous page, drawing in two colors. How should you change the part of the block to change the color of the pen?<br />
                     <div class="endnote">
                         <a href="#hint-three-colors" data-toggle="collapse" title="Click for an example of writing on the stage in three colors.">Click for an example of writing on the stage in three colors.</a>
                         <div id="hint-three-colors" class="collapse">
@@ -160,98 +176,6 @@
         
         <h3>Advanced Learning</h3>
 		<div class="forYouToDo">
-            <div class="todo">
-                <div class="comment">Brian, OK, I went a little over the top here, but some teachers might like to dig in too. Please review this table carefully; it would be easy to get something wrong. --MF, 1/14/20</div>
-                TG (for answer key): i) The <code>and</code> function can be represented as TFFF; ii-v) Answers will vary for parts ii and iii. The following table lists the 16 (part iv) possible two-input Boolean operators and their usefulness. The goal is for students to <em>think about usefulness</em>&mdash;not for them to accurately categorize each of the functions or even to learn the logic of each one. Unless you have a background in logic or computer science, even you (as teacher with the answer key) are likely to find some of these take a bit of thinking to wrap your mind around.
-                <table class="bordered standard" summary="table showing the 16 two-input Boolean operators and remarking on their usefulness">
-                    <tr>
-                        <th scope="col">&nbsp;</th>
-                        <th scope="col">Useful?</th>
-                        <th scope="col">Why?</th>
-                    </tr>
-                    <tr>
-                        <th scope="col">TTTT</th>
-                        <td>no</td>
-                        <td>always reports <code>true</code></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">TTTF</th>
-                        <td>yes</td>
-                        <td>equivalent to <code>or</code></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">TTFT</th>
-                        <td>yes</td>
-                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/Converse_implication" title="converse implication" target="_blank">converse implication</a> (false only when the first input is false but the second input is true; the second input being true implies the first input must be true)</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">TTFF</th>
-                        <td>no</td>
-                        <td>reports the value of the first input regardless of the second input, so you could just use the first input as the predicate instead of building this predicate function</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">TFTT</th>
-                        <td>yes</td>
-                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/Material_conditional" title="implication" target="_blank">implication</a> (false only when the first input is true but the second input is false; the first input being true implies the second input must be true)</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">TFTF</th>
-                        <td>no</td>
-                        <td>reports the value of the second input regardless of the first input, so you could just use the second input as the predicate instead of building this predicate function</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">TFFT</th>
-                        <td>yes</td>
-                        <td>checks whether two inputs are the same (equivalent to <code>=</code> and to <a href="https://en.wikipedia.org/wiki/XNOR_gate" title="XNOR" target="_blank">XNOR</a>, exclusive NOT OR)</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">TFFF</th>
-                        <td>yes</td>
-                        <td>equivalent to <code>and</code></td>
-                    </tr>
-                    <tr>
-                        <th scope="col">FTTT</th>
-                        <td>yes</td>
-                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/NAND_gate" title="NAND" target="_blank">NAND</a> (that is, <code>not (and)</code>)</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">FTTF</th>
-                        <td>yes</td>
-                        <td>checks whether two inputs are the different (equivalent to <code>not(=)</code> and to <a href="https://en.wikipedia.org/wiki/XOR_gate" title="XOR" target="_blank">XOR</a>, exclusive OR)</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">FTFT</th>
-                        <td>no</td>
-                        <td>reports the value of the opposite of the second input regardless of the first input, so you could just use the opposite of the second input as the predicate instead of building this predicate function</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">FTFF</th>
-                        <td>yes</td>
-                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/Material_nonimplication" title="nonimplication" target="_blank">nonimplication</a> (true only when the first input is true but the second input is false; the first input being true implies the second input must be false)</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">FFTT</th>
-                        <td>no</td>
-                        <td>reports the value of the opposite of the first input regardless of the second input, so you could just use the opposite of the first input as the predicate instead of building this predicate function</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">FFTF</th>
-                        <td>yes</td>
-                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/Converse_nonimplication" title="converse nonimplication" target="_blank">converse nonimplication</a> (true only when the first input is false but the second input is true; the second input being true implies the first input must be false)</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">FFFT</th>
-                        <td>yes</td>
-                        <td>equivalent to <a href="https://en.wikipedia.org/wiki/NOR_gate" title="NOR" target="_blank">NOR</a> (that is, <code>not(or)</code>)</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">FFFF</th>
-                        <td>no</td>
-                        <td>always reports <code>false</code></td>
-                    </tr>
-                </table>
-                vi) There are 256 three-input Boolean operators because there are eight combinations of inputs for a three-input Boolean operator and each of those combinations could report one of two values (T or F): <span class="katex">2^8=256</span>. (For comparison, there are 16 two-input Boolean operators because there are four combinations of inputs for a two-input operator and each can report one of two values (T or F): <span class="katex">2^4=16</span>.)
-            </div>
             <ol type="A">
                 <li>
                     Because there are only two Boolean values (<code>true</code> and <code>false</code>), there are only four combinations of inputs for a two-input Boolean operator. Here are the four combinations shown with the <code>or</code> operator:<br />
